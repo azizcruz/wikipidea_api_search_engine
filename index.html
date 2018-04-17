@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wikipidia Search Engine</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- Start For Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- End For Icons -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body class="indigo accent-1">
+    <!-- Start Search Input -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="search-box col s12 m6 offset-m3">
+                    <h5 class="center indigo-text darken-4">Wikipidia Search Engine</h5>
+                    <nav>
+                        <div class="nav-wrapper indigo darken-4">
+                            <div class="input-field">
+                                <input type="search" id="search" placeholder="What Do You Want To Read?" autocomplete="off" required>
+                                <label for="search"><i class="material-icons">search</i></label> <i class="material-icons" id="close">close</i> </div>
+                        </div>
+                        <ul class="resultBox" id="resultBox"> </ul>
+                    </nav> 
+                    <span class="randArticle indigo-text darken-4">Random Article</span>
+                    <div class="fixed-action-btn" id="random">
+                         <span class="arrow">
+                            <i class="material-icons medium indigo-text darken-4 animated pulse infinite">trending_flat
+                            </i>
+                        </span> 
+                        <a href="https://en.wikipedia.org/wiki/Special:Random" target='_blank' class="btn-floating btn-large waves-effect indigo-text darken-4 indigo darken-4 waves-light">
+                            <i class="material-icons">shuffle</i>
+                        </a> 
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="powered-by">
+            <p class="indigo-text darken-4" style="font-weight: bold">Powered By <span class="white-text">Aziz</span></p>
+        </div>
+    </section>
+    <!-- End Search Input -->
+    <!-- Javascript Files -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

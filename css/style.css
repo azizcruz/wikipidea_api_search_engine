@@ -1,0 +1,139 @@
+/*Start Global Style*/
+
+body {}
+
+.active-selector {
+    background-color:  #1a237e !important;
+}
+
+/*End Global Style*/
+
+
+/*Start Search Input Style*/
+
+.search-box h5 {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.search-box nav {
+    visibility: hidden;
+}
+.search-box nav input[type='search']:focus {
+    color: #1a237e;
+}
+
+.search-box nav a {margin: 0; padding: 0;}
+.search-box nav .search::-webkit-input-placeholder {color: #FFF}
+.search-box nav .search::-moz-input-placeholder {color: #FFF}
+.search-box nav .search::-ms-input-placeholder {color: #FFF}
+.search-box nav .search::-o-input-placeholder {color: #FFF}
+
+.search-box nav .resultBox {
+    background-color: rgba(26, 35, 126, .5);
+    display: none;
+    height: 180px;
+    max-height: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.search-box nav ul a {
+    float: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.search-box nav ul a:hover {
+    cursor: pointer;
+    background-color: #1a237e;
+    
+}
+
+.search-box #random {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.search-box .randArticle {
+    font-size: 14px;
+    bottom: 39px;
+    right: 140px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.search-box #random .arrow i {
+    position: absolute;
+    right: 60px;
+    bottom: -4px;
+}
+
+.powered-by {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+}
+
+
+/*End Search Input Style*/
+
+
+/*Fix Mobile Bugs*/
+
+@media (max-width: 992px) {
+    .search-box #random {
+        font-size: 12px;
+    }
+    .search-box #random .arrow i {
+        right: 60px;
+        bottom: 1px;
+    }
+    .search-box .randArticle {
+        font-size: 14px;
+        bottom: 42px;
+        right: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    
+    .search-box h5 {
+        margin-top: 200px;
+    }
+    .search-box .randArticle {
+        font-size: 18px;
+        bottom: 110px;
+        right: 5px;
+        position: absolute;
+        font-weight: bold;
+    }
+    .btn-floating.btn-large i {
+        line-height: 80px;
+        font-size: 5em
+    }
+    .search-box #random .arrow i {
+        display: none;
+    }
+    .btn-floating {
+        height: 80px !important;
+        width: 80px !important;
+        right: 10px;
+    }
+    .powered-by {
+        position: absolute;
+        bottom: 30px;
+        font-size: 18px;
+    }
+}
+
+
+/*Fix Mobile Bugs*/
